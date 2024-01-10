@@ -1,7 +1,0 @@
-:root {
-  --nav-bar-height: 80px;
-}
-
-body {
-  @apply bg-primary;
-}
