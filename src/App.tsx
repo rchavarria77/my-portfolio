@@ -1,7 +1,13 @@
 import './App.css';
+import { Header } from '@/components/Header';
+import { Layout } from '@/components/global-components/Layout';
 
 function App() {
-  return <h1 className='text-3xl font-bold underline'>Hello world!</h1>;
+  return (
+    <Layout>
+      <Header />
+    </Layout>
+  );
 }
 
 export default App;
