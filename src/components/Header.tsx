@@ -1,7 +1,13 @@
-export const Header = () => {
+// Icons
+import { MenuIcon } from '@/components/icons';
+
+// Interfaces
+import { IMenuOption } from '@/interfaces/Interfaces';
+
+export const Header = ({ options = [] }: { options: IMenuOption[] }) => {
   return (
-    <nav className='bg-white border-gray-200 dark:bg-gray-900'>
-      <div className='flex flex-wrap items-center justify-between max-w-screen-xl py-4 mx-auto'>
+    <header className='sticky top-0 z-10 bg-shark-950 backdrop-blur-2xl'>
+      <nav className='flex flex-wrap items-center justify-between py-4 px-12 md:px-32 lg:px-[140px]'>
         <img src='/logo-no-background.svg' className='w-16 h-8' alt='' />
         <button
           data-collapse-toggle='navbar-default'
@@ -11,68 +17,24 @@ export const Header = () => {
           aria-expanded='false'
         >
           <span className='sr-only'>Open main menu</span>
-          <svg
-            className='w-5 h-5'
-            aria-hidden='true'
-            xmlns='http://www.w3.org/2000/svg'
-            fill='none'
-            viewBox='0 0 17 14'
-          >
-            <path
-              stroke='currentColor'
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth='2'
-              d='M1 1h15M1 7h15M1 13h15'
-            />
-          </svg>
+          <MenuIcon />
         </button>
         <div className='hidden w-full md:block md:w-auto' id='navbar-default'>
           <ul className='flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'>
-            <li>
-              <a
-                href='#'
-                className='block px-3 py-2 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500'
-                aria-current='page'
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href='#'
-                className='block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href='#'
-                className='block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
-              >
-                Services
-              </a>
-            </li>
-            <li>
-              <a
-                href='#'
-                className='block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
-              >
-                Pricing
-              </a>
-            </li>
-            <li>
-              <a
-                href='#'
-                className='block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
-              >
-                Contact
-              </a>
-            </li>
+            {options.map(({ id, name, href }) => (
+              <li key={id}>
+                <a
+                  href={href}
+                  className='block px-2 py-2 text-white rounded-full hover:bg-woodsmoke-900'
+                  aria-current='page'
+                >
+                  {name}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 };
