@@ -2,11 +2,11 @@
 import { twMerge } from 'tailwind-merge';
 
 export const SectionContainer = ({
-  className,
+  customClass,
   id,
   children,
 }: {
-  className?: string;
+  customClass?: string;
   id: string;
   children: any;
 }) => {
@@ -14,7 +14,7 @@ export const SectionContainer = ({
     <section
       id={id}
       data-section={id}
-      className={twMerge('section w-full mx-auto pb-48', className)}
+      className={twMerge('section w-full mx-auto', customClass)}
     >
       {children}
     </section>

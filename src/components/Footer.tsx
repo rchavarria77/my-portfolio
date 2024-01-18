@@ -8,7 +8,7 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className='w-full py-4 bg-woodsmoke-950 backdrop-blur-lg'>
+    <footer className='w-full py-4 bg-[rgba(0,0,0)]/50 backdrop-blur-lg'>
       <div className='w-full mx-auto flex flex-col sm:flex-row items-center sm:justify-between px-12 md:px-32 lg:px-[140px]'>
         <span className='py-2 text-sm text-center text-yellow-800/90 dark:text-yellow-200/90'>
           Copyright © Roberto Chavarria | {currentYear}
