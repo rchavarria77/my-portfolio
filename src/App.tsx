@@ -18,8 +18,8 @@ const headerMenuOptions: IMenuOption[] = [
 const App = () => {
   return (
     <>
-      <div className='absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-cod-gray-950 bg-gradient-to-b from-[rgba(54,52,140,0.3)] to-[rgba(255,255,255,0)]'></div>
-      <div className='flex flex-col justify-between min-h-screen'>
+      <div className='absolute z-[-2] h-full min-h-screen w-full bg-cod-gray-950 bg-gradient-to-b from-[rgba(54,52,140,0.3)] to-[rgba(255,255,255,0)]'></div>
+      <div className='flex flex-col justify-between min-h-[100dvh]'>
         <Header options={headerMenuOptions} />
         <Body />
         <Footer />

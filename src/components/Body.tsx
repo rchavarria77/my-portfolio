@@ -10,7 +10,7 @@ import {
 
 export const Body = () => {
   return (
-    <main>
+    <main className='flex flex-col justify-center w-full'>
       <Introduction />
       <Projects />
       <Experience />

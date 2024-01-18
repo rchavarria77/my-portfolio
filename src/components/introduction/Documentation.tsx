@@ -6,10 +6,16 @@ import { DownloadIcon, MessageIcon } from '@/components/icons';
 
 export const Documentation = () => {
   return (
-    <div className='flex flex-col items-start order-3 gap-4 pt-8 md:pt-0'>
-      <SocialPill href='' customClass='hover:scale-110 gap-1 min-w-max'>
-        <p className='text-sm text-shark-300'>Download CV</p>
+    <div className='flex flex-col items-center order-3 gap-4 pt-8 lg:items-start md:pt-0'>
+      <SocialPill
+        href=''
+        customClass='hover:scale-110 gap-1 min-w-max animate-pulse animate-infinite hover:animate-none'
+      >
         <DownloadIcon className='size-4 md:size-4 text-shark-300' />
+        <p className='flex items-center text-sm text-shark-300'>
+          <span className='hidden lg:flex'>Download &nbsp;</span>
+          <span>CV</span>
+        </p>
       </SocialPill>
       <SocialPill
         href='#contact-me'

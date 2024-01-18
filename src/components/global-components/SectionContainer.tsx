@@ -14,7 +14,10 @@ export const SectionContainer = ({
     <section
       id={id}
       data-section={id}
-      className={twMerge('section w-full mx-auto', customClass)}
+      className={twMerge(
+        'section w-full mx-auto max-w-sm px-4 lg:px-0 xs:max-w-xl sm:max-w-2xl md:max-w-4xl xl:max-w-6xl backdrop-blur-sm',
+        customClass
+      )}
     >
       {children}
     </section>

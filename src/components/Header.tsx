@@ -6,8 +6,8 @@ import { IMenuOption } from '@/interfaces/Interfaces';
 
 export const Header = ({ options = [] }: { options: IMenuOption[] }) => {
   return (
-    <header className='sticky top-0 z-10'>
-      <nav className='w-full flex flex-wrap items-center bg-[rgba(0,0,0)]/30 justify-between py-4 px-12 md:px-32 lg:px-[140px]'>
+    <header className='sticky top-0 z-10 w-full overflow-x-hidden h-[5rem] flex justify-center dark:bg-dusky bg-opacity-70 left-0 backdrop-blur-lg subpixel-antialiased'>
+      <nav className='flex flex-wrap items-center justify-between w-full max-w-sm p-4 lg:px-0 xs:max-w-xl sm:max-w-2xl md:max-w-4xl xl:max-w-6xl backdrop-blur-sm'>
         <img
           src='/logo-no-background.svg'
           className='w-16 h-8'
