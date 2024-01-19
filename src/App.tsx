@@ -2,7 +2,7 @@
 import { Body, Footer, Header } from '@/components';
 
 // Interfaces
-import { IMenuOption } from '@/interfaces/Interfaces';
+import { IMenuOption } from '@/interfaces';
 
 // Styles
 import '@/styles/App.css';

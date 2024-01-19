@@ -9,13 +9,13 @@ export const SocialLinks = () => {
     <div className='flex items-center'>
       <SocialPill
         href='https://www.linkedin.com/in/rchavarria7/'
-        customClass='hover:scale-110'
+        className='hover:scale-110'
       >
         <LinkedInIcon className='size-5 md:size-6' />
       </SocialPill>
       <SocialPill
         href='https://github.com/rchavarria77'
-        customClass='hover:scale-110'
+        className='hover:scale-110'
       >
         <GitHubIcon className='size-5 md:size-6' />
       </SocialPill>

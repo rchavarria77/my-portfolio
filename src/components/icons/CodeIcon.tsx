@@ -2,7 +2,7 @@
 import { SVGProps } from 'react';
 import { JSX } from 'react/jsx-runtime';
 
-export const DownloadIcon = (
+export const CodeIcon = (
   props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
 ) => {
   return (
@@ -12,16 +12,16 @@ export const DownloadIcon = (
       width='24'
       height='24'
       viewBox='0 0 24 24'
-      fill='none'
-      stroke='currentColor'
       strokeWidth='2'
+      stroke='currentColor'
+      fill='none'
       strokeLinecap='round'
       strokeLinejoin='round'
-      className='lucide lucide-download-cloud'
     >
-      <path d='M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242' />
-      <path d='M12 12v9' />
-      <path d='m8 17 4 4 4-4' />
+      <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+      <path d='M7 8l-4 4l4 4'></path>
+      <path d='M17 8l4 4l-4 4'></path>
+      <path d='M14 4l-4 16'></path>
     </svg>
   );
 };
