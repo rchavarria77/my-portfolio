@@ -2,7 +2,7 @@
 import { SocialPill } from '@/components/global-components';
 
 // Icons
-import { GitHubIcon, LinkedInIcon } from '@/components/icons';
+import { GitHubIcon, LinkedInIcon, MailForwardIcon } from '@/components/icons';
 
 export const SocialLinks = () => {
   return (
@@ -18,6 +18,12 @@ export const SocialLinks = () => {
         className='hover:scale-110'
       >
         <GitHubIcon className='size-5 md:size-6' />
+      </SocialPill>
+      <SocialPill
+        href='mailto:rchavarria77@outlook.com'
+        className='hover:scale-110'
+      >
+        <MailForwardIcon className='size-5 md:size-6' />
       </SocialPill>
     </div>
   );

@@ -16,5 +16,6 @@ export interface IProject {
   description: string;
   url: string;
   image: string;
+  type: 'personal' | 'client';
   tags: ITag[];
 }

@@ -9,5 +9,6 @@ export * from './introduction/Documentation';
 export * from './introduction/Introduction';
 export * from './introduction/SocialLinks';
 export * from './projects/Projects';
+export * from './projects/ProjectType';
 export * from './projects/Technologies';
 export * from './skills/Skills';
