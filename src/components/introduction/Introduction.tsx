@@ -14,6 +14,7 @@ export const Introduction = () => {
         <img
           src='/assets/avatar_laptop.webp'
           alt='roberto avatar photo'
+          loading='lazy'
           className='order-2 w-full max-w-48 lg:max-w-xs animate-fade-up animate-duration-[2000ms] animate-once'
         />
         <Documentation />

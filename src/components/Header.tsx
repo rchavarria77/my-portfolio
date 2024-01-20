@@ -31,6 +31,7 @@ export const Header = ({ options = [] }: { options: IMenuOption[] }) => {
                   href={href}
                   className='block px-2 py-2 text-[rgb(255,255,255)] rounded-full hover:bg-ebony-200 hover:text-cod-gray-950'
                   aria-current='page'
+                  aria-label='hamburger menu'
                 >
                   {name}
                 </a>

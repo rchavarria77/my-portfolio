@@ -10,6 +10,7 @@ export const Documentation = () => {
       <SocialPill
         href=''
         className='gap-1 hover:scale-110 min-w-max animate-pulse animate-infinite hover:animate-none'
+        ariaLabel='Download CV'
       >
         <DownloadIcon className='size-4 md:size-4 text-shark-300' />
         <p className='flex items-center text-sm text-shark-300'>
@@ -21,6 +22,7 @@ export const Documentation = () => {
         href='#contact-me'
         target='_self'
         className='flex flex-row justify-around w-full border rounded-full hover:scale-110'
+        ariaLabel={`Let's Talk`}
       >
         <MessageIcon className='size-4 md:size-4 text-shark-300' />
         <p className='text-sm text-shark-300'>Let's Talk</p>

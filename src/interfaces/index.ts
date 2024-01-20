@@ -19,3 +19,18 @@ export interface IProject {
   type: 'personal' | 'client';
   tags: ITag[];
 }
+
+export interface IExperience {
+  id: number;
+  role: string;
+  date: string;
+  company: string;
+  description: string;
+  achievements: IAchievement[];
+  tags: ITag[];
+}
+
+export interface IAchievement {
+  id: number;
+  text: string;
+}

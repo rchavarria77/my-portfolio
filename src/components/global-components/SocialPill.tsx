@@ -6,11 +6,13 @@ export const SocialPill = ({
   href = '',
   className = '',
   target = '_blank',
+  ariaLabel,
 }: {
   children: any;
   href: string;
   className?: string;
   target?: string;
+  ariaLabel?: string;
 }) => {
   return (
     <a
@@ -21,6 +23,7 @@ export const SocialPill = ({
       )}
       target={target}
       rel='noopener noreferrer'
+      aria-label={ariaLabel}
     >
       {children}
     </a>

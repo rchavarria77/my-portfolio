@@ -1,9 +1,18 @@
+// Dependencies
+import { twMerge } from 'tailwind-merge';
+
 // Interfaces
 import { ITag } from '@/interfaces';
 
-export const Technologies = ({ tags }: { tags: ITag[] }) => {
+export const TechnologiesStack = ({
+  tags,
+  className,
+}: {
+  tags: ITag[];
+  className?: string;
+}) => {
   return (
-    <ul className='flex flex-row mb-2 gap-x-2'>
+    <ul className={twMerge('w-full flex flex-wrap mb-2 gap-2', className)}>
       {tags.map((tag) => (
         <li key={tag.name}>
           <span

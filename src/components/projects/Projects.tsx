@@ -3,39 +3,18 @@ import {
   Card,
   LinkButton,
   SectionContainer,
+  Tags,
+  TechnologiesStack,
 } from '@/components/global-components';
-import { ProjectType, Technologies } from '@/components';
+import { ProjectType } from '@/components';
 
 // Icons
-import {
-  CodeIcon,
-  InternetIcon,
-  JestIcon,
-  ReactIcon,
-  TailwindIcon,
-} from '@/components/icons';
+import { CodeIcon, InternetIcon } from '@/components/icons';
 
 // Interfaces
-import { IProject, ITag } from '@/interfaces';
+import { IProject } from '@/interfaces';
 
 // Constants
-const TAGS: { [key: string]: ITag } = {
-  JEST: {
-    name: 'Jest',
-    className: 'bg-[#003159] text-[rgb(255,255,255)]',
-    icon: JestIcon,
-  },
-  REACT: {
-    name: 'React.js',
-    className: 'bg-[#003159] text-[rgb(255,255,255)]',
-    icon: ReactIcon,
-  },
-  TAILWIND: {
-    name: 'Tailwind CSS',
-    className: 'bg-[#003159] text-[rgb(255,255,255)]',
-    icon: TailwindIcon,
-  },
-};
 const PROJECTS: IProject[] = [
   {
     id: 1,
@@ -45,7 +24,7 @@ const PROJECTS: IProject[] = [
     url: 'https://www.cpi-edu.com/',
     image: '/assets/cpi.webp',
     type: 'client',
-    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.JEST],
+    tags: [Tags.REACT, Tags.TAILWIND, Tags.JEST],
   },
   {
     id: 2,
@@ -55,7 +34,7 @@ const PROJECTS: IProject[] = [
     url: 'https://touringregal.com/',
     image: '/assets/tr.webp',
     type: 'client',
-    tags: [TAGS.REACT, TAGS.TAILWIND],
+    tags: [Tags.REACT, Tags.TAILWIND],
   },
 ];
 
@@ -83,7 +62,7 @@ export const Projects = () => {
                   </div>
 
                   <p className='mb-4 text-lg text-pretty'>{description}</p>
-                  <Technologies tags={tags} />
+                  <TechnologiesStack tags={tags} />
                   <img
                     src={image}
                     alt={`Project screenshot of ${image}`}
@@ -91,7 +70,7 @@ export const Projects = () => {
                     className='rounded shadow-2xl shadow-[rgb(255,255,255)]/10 aspect-video'
                   />
                   <div className='flex items-end justify-start mt-4 gap-x-4'>
-                    <LinkButton href={url}>
+                    <LinkButton href={url} ariaLabel='Visit the website'>
                       <InternetIcon />
                       Visit the website
                     </LinkButton>
