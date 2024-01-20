@@ -87,7 +87,10 @@ export const Experience = () => {
       id='experience'
       className='flex flex-col items-center justify-center w-full px-4 my-16 lg:px-0'
     >
-      <h2 className='flex items-center mb-6 text-3xl font-semibold gap-x-3 text-[rgb(255,255,255)]/80'>
+      <h2
+        aria-label='Experience'
+        className='flex items-center mb-6 text-3xl font-semibold gap-x-3 text-[rgb(255,255,255)]/80'
+      >
         <BriefcaseIcon className='size-7' />
         Experience
       </h2>

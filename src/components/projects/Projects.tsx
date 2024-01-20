@@ -43,9 +43,12 @@ export const Projects = () => {
     <>
       <SectionContainer
         id='projects'
-        className='flex flex-col items-center justify-center w-full px-4 my-24 lg:px-0 '
+        className='flex flex-col items-center justify-center w-full px-4 my-24 lg:px-0'
       >
-        <h2 className='flex items-center mb-6 text-3xl font-semibold gap-x-3 text-[rgb(255,255,255)]/80'>
+        <h2
+          className='flex items-center mb-6 text-3xl font-semibold gap-x-3 text-[rgb(255,255,255)]/80'
+          aria-label='Projects'
+        >
           <CodeIcon className='size-7' />
           Projects
         </h2>
