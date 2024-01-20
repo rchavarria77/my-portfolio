@@ -1,6 +1,7 @@
 // Dependencies
-import { SVGProps } from 'react';
 import { JSX } from 'react/jsx-runtime';
+import { SVGProps } from 'react';
+import { twMerge } from 'tailwind-merge';
 
 export const UserIcon = (
   props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
@@ -9,7 +10,7 @@ export const UserIcon = (
     <svg
       {...props}
       xmlns='http://www.w3.org/2000/svg'
-      className='icon icon-tabler icon-tabler-user'
+      className={twMerge('icon icon-tabler icon-tabler-user', props.className)}
       width='24'
       height='24'
       viewBox='0 0 24 24'

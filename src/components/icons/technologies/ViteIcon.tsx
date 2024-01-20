@@ -1,6 +1,6 @@
 // Dependencies
-import { SVGProps } from 'react';
 import { JSX } from 'react/jsx-runtime';
+import { SVGProps } from 'react';
 
 export const ViteIcon = (
   props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>

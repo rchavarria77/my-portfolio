@@ -1,6 +1,7 @@
 // Dependencies
-import { SVGProps } from 'react';
 import { JSX } from 'react/jsx-runtime';
+import { SVGProps } from 'react';
+import { twMerge } from 'tailwind-merge';
 
 export const DownloadIcon = (
   props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
@@ -17,7 +18,7 @@ export const DownloadIcon = (
       strokeWidth='2'
       strokeLinecap='round'
       strokeLinejoin='round'
-      className='lucide lucide-download-cloud'
+      className={twMerge('lucide lucide-download-cloud', props.className)}
     >
       <path d='M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242' />
       <path d='M12 12v9' />
