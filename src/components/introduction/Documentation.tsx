@@ -8,7 +8,7 @@ export const Documentation = () => {
   return (
     <div className='flex flex-col items-center order-3 gap-4 pt-8 lg:items-start md:pt-0'>
       <SocialPill
-        href=''
+        href='https://flowcv.me/roberto-chavarria/file-r4od9wkvn68h.pdf'
         className='gap-1 hover:scale-110 min-w-max animate-pulse animate-infinite hover:animate-none'
         ariaLabel='Download CV'
       >
