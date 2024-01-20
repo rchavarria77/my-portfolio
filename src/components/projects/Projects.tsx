@@ -47,7 +47,7 @@ export const Projects = () => {
       >
         <h2
           className='flex items-center mb-6 text-3xl font-semibold gap-x-3 text-[rgb(255,255,255)]/80'
-          aria-label='Projects'
+          aria-label='Projects heading'
         >
           <CodeIcon className='size-7' />
           Projects
