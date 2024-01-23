@@ -1,3 +1,34 @@
 :root {
   color-scheme: dark;
 }
+
+.water-text-background {
+  background-image: url(/assets/water_texture.webp);
+  background-size: cover;
+  background-clip: text;
+  -webkit-backgrund-clip: text;
+  color: transparent;
+  filter: contrast(140%) brightness(90%);
+}
+
+.shape-outer {
+  display: flex;
+  flex-shrink: 0;
+  height: calc(150px + 4vw);
+  width: calc(150px + 4vw);
+  margin: 25px;
+  background-image: linear-gradient(to bottom right, #0c035e, #562b7c, #2b86c5);
+}
+
+.shape-inner {
+  height: calc(130px + 4vw);
+  width: calc(130px + 4vw);
+  background: url(/assets/profile.webp) no-repeat center;
+  background-size: 140%;
+  margin: auto;
+}
+
+.circle {
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+}

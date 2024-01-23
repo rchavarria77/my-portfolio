@@ -19,7 +19,7 @@ export const Documentation = () => {
         </p>
       </SocialPill>
       <SocialPill
-        href='#contact-me'
+        href='#contact'
         target='_self'
         className='flex flex-row justify-around w-full border rounded-full hover:scale-110'
         ariaLabel={`Let's Talk`}

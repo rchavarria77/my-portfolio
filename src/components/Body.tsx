@@ -12,8 +12,8 @@ export const Body = () => {
   return (
     <main className='flex flex-col justify-center w-full'>
       <Introduction />
-      <Projects />
       <Experience />
+      <Projects />
       <Skills />
       <AboutMe />
       <ContactMe />

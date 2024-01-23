@@ -7,7 +7,7 @@ export const SectionContainer = ({
   children,
 }: {
   className?: string;
-  id: string;
+  id?: string;
   children: any;
 }) => {
   return (
