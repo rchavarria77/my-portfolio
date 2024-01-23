@@ -1,18 +1,26 @@
 // Icons
 import {
+  AWSIcon,
+  AngularIcon,
   BootstrapIcon,
   CSSIcon,
+  ExpressIcon,
   GraphQLIcon,
   HtmlIcon,
   JavaScriptIcon,
   JestIcon,
+  MaterialIcon,
+  MongoIcon,
+  MySqlIcon,
   NextIcon,
   NodeIcon,
   PhpIcon,
+  PostgreIcon,
   ReactIcon,
   SQLIcon,
   TailwindIcon,
   TypeScriptIcon,
+  ViteIcon,
 } from '@/components/icons';
 
 // Interfaces
@@ -83,5 +91,45 @@ export const Tags: { [key: string]: ITag } = {
     name: 'SQL Server',
     className: 'bg-[#003159] text-[rgb(255,255,255)]',
     icon: SQLIcon,
+  },
+  EXPRESS: {
+    name: 'Express.js',
+    className: 'bg-[#003159] text-[rgb(255,255,255)]',
+    icon: ExpressIcon,
+  },
+  MATERIAL: {
+    name: 'Material UI',
+    className: 'bg-[#003159] text-[rgb(255,255,255)]',
+    icon: MaterialIcon,
+  },
+  ANGULAR: {
+    name: 'Angular',
+    className: 'bg-[#003159] text-[rgb(255,255,255)]',
+    icon: AngularIcon,
+  },
+  MYSQL: {
+    name: 'MySQL',
+    className: 'bg-[#003159] text-[rgb(255,255,255)]',
+    icon: MySqlIcon,
+  },
+  MONGO: {
+    name: 'MongoDB',
+    className: 'bg-[#003159] text-[rgb(255,255,255)]',
+    icon: MongoIcon,
+  },
+  POSTGRE: {
+    name: 'PostgreSQL',
+    className: 'bg-[#003159] text-[rgb(255,255,255)]',
+    icon: PostgreIcon,
+  },
+  VITE: {
+    name: 'Vite.js',
+    className: 'bg-[#003159] text-[rgb(255,255,255)]',
+    icon: ViteIcon,
+  },
+  AWS: {
+    name: 'AWS',
+    className: 'bg-[#003159] text-[rgb(255,255,255)]',
+    icon: AWSIcon,
   },
 };

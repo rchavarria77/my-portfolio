@@ -3,6 +3,7 @@ export * from './BuildingIcon';
 export * from './CalendarIcon';
 export * from './ChevronsRightIcon';
 export * from './ChevronsUpIcon';
+export * from './CircleArrowUpIcon';
 export * from './CloseIcon';
 export * from './CodeIcon';
 export * from './DownloadIcon';

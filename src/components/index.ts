@@ -1,6 +1,7 @@
 export * from './about-me/AboutMe';
 export * from './about-me/DescriptionContainer';
 export * from './about-me/ImageContainer';
+export * from './BackToTop';
 export * from './Body';
 export * from './contact-me/ContactMe';
 export * from './experience/Experience';
@@ -13,4 +14,5 @@ export * from './introduction/SocialLinks';
 export * from './Navbar';
 export * from './projects/Projects';
 export * from './projects/ProjectType';
+export * from './skills/IconsContainer';
 export * from './skills/Skills';

@@ -70,7 +70,9 @@ export const Navbar = ({ navigation }: { navigation: IMenuOption[] }) => {
         <div
           className={twMerge(
             'w-full md:block md:w-auto',
-            mobileMenuOpen ? '' : 'hidden'
+            mobileMenuOpen
+              ? 'animate-fade-down animate-duration-[1000ms]'
+              : 'hidden'
           )}
           id='mobile-menu'
         >

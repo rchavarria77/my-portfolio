@@ -1,6 +1,7 @@
 // Components
 import {
   AboutMe,
+  BackToTop,
   ContactMe,
   Experience,
   Introduction,
@@ -17,6 +18,7 @@ export const Body = () => {
       <Skills />
       <AboutMe />
       <ContactMe />
+      <BackToTop />
     </main>
   );
 };

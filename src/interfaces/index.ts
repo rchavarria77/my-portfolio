@@ -30,6 +30,13 @@ export interface IExperience {
   tags: ITag[];
 }
 
+export interface ISkill {
+  id: number;
+  name: string;
+  direction: 'r' | 'l';
+  icons: ITag[];
+}
+
 export interface IAchievement {
   id: number;
   text: string;
