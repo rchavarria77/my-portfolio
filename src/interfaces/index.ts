@@ -55,10 +55,11 @@ export interface IInput {
   placeholder?: string;
   inputType?: 'text' | 'email';
   isDisabled?: boolean;
+  isRequired?: boolean;
   className?: string;
-  errors: Record<string, string>;
+  errors?: Record<string, string>;
   rows?: number;
-  handleChange:
+  handleChange?:
     | React.ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>
     | undefined;
 }

@@ -35,7 +35,7 @@ export const Documentation = () => {
         handleClick={handleDownload}
         className='gap-1 bg-[transparent] border-none hover:scale-110 min-w-max animate-pulse animate-infinite hover:animate-none'
       >
-        <DownloadIcon className='size-4 md:size-4 text-shark-300' />
+        <DownloadIcon className='size-4 text-shark-300' />
         <p className='flex items-center text-sm text-shark-300'>
           <span className='hidden lg:flex'>Download &nbsp;</span>
           <span>CV</span>
@@ -44,10 +44,10 @@ export const Documentation = () => {
       <SocialPill
         href='#contact'
         target='_self'
-        className='flex flex-row justify-around w-full border rounded-full hover:scale-110'
+        className='flex flex-row justify-around w-full gap-2 border rounded-full lg:gap-0 hover:scale-110'
         ariaLabel={`Let's Talk`}
       >
-        <MessageIcon className='size-4 md:size-4 text-shark-300' />
+        <MessageIcon className='size-4 text-shark-300' />
         <p className='text-sm text-shark-300'>Let's Talk</p>
       </SocialPill>
     </div>

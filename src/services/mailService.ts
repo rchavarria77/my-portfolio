@@ -11,7 +11,7 @@ export const sendEmail = async (
     import.meta.env.VITE_EMAIL_SERVICE_ID,
     import.meta.env.VITE_EMAIL_TEMPLATE_ID,
     {
-      subject: `Portfolio Contact Request from ${name} <${email}>`,
+      subject: `Portfolio Contact Request from ${name}`,
       name,
       email,
       message,

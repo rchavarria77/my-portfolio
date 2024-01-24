@@ -63,16 +63,15 @@ export const Projects = () => {
                     </h3>
                     <ProjectType type={type} />
                   </div>
-
-                  <p className='mb-4 text-lg text-pretty'>{description}</p>
-                  <TechnologiesStack tags={tags} />
+                  <p className='text-lg text-pretty'>{description}</p>
+                  <TechnologiesStack tags={tags} className='mt-4' />
                   <img
                     src={image}
                     alt={`Project screenshot of ${image}`}
                     loading='lazy'
                     className='rounded shadow-2xl shadow-[rgb(255,255,255)]/10 aspect-video'
                   />
-                  <div className='flex items-end justify-start mt-4 gap-x-4'>
+                  <div className='flex items-end justify-start mt-6 gap-x-4'>
                     <LinkButton href={url} ariaLabel='Visit the website'>
                       <InternetIcon />
                       Visit the website

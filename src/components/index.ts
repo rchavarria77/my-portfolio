@@ -17,3 +17,4 @@ export * from './projects/Projects';
 export * from './projects/ProjectType';
 export * from './skills/IconsContainer';
 export * from './skills/Skills';
+export * from './ThemeSwitcher';

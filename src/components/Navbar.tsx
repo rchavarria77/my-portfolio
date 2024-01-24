@@ -2,6 +2,9 @@
 import { twMerge } from 'tailwind-merge';
 import { useEffect, useState } from 'react';
 
+// Components
+import { ThemeSwitcher } from '@/components';
+
 // Icons
 import { CloseIcon, MenuIcon } from '@/components/icons';
 
@@ -76,7 +79,7 @@ export const Navbar = ({ navigation }: { navigation: IMenuOption[] }) => {
           )}
           id='mobile-menu'
         >
-          <ul className='flex flex-col p-4 mt-4 font-medium rounded-lg md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0'>
+          <ul className='flex flex-col items-center p-4 mt-4 font-medium rounded-lg md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0'>
             {navigation.map(({ id, name, href }) => (
               <li key={id}>
                 <a
@@ -92,6 +95,9 @@ export const Navbar = ({ navigation }: { navigation: IMenuOption[] }) => {
                 </a>
               </li>
             ))}
+            <li className='pt-6 mt-2 border-t md:m-0 md:pt-0 md:border-none'>
+              <ThemeSwitcher />
+            </li>
           </ul>
         </div>
       </div>
