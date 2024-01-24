@@ -11,7 +11,7 @@ const headerMenuOptions: IMenuOption[] = [
   { id: 1, name: 'Experience', href: '#experience' },
   { id: 2, name: 'Projects', href: '#projects' },
   { id: 3, name: 'Skills', href: '#skills' },
-  { id: 4, name: 'About Me', href: '#about-me' },
+  { id: 4, name: 'About', href: '#about-me' },
   { id: 5, name: 'Contact', href: '#contact' },
 ];
 

@@ -1,3 +1,4 @@
+export * from './AddressBookIcon';
 export * from './BriefcaseIcon';
 export * from './BuildingIcon';
 export * from './CalendarIcon';

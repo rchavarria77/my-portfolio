@@ -11,6 +11,7 @@ export const BackToTop = () => {
         href='#'
         target='_self'
         className='border-[transparent] border-none bg-[transparent] animate-bounce animate-infinite animate-duration-1000'
+        ariaLabel='Back to top button'
       >
         <CircleArrowUpIcon className='size-10 hover:scale-125' />
       </LinkButton>

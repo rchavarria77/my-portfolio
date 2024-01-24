@@ -4,6 +4,7 @@ export * from './about-me/ImageContainer';
 export * from './BackToTop';
 export * from './Body';
 export * from './contact-me/ContactMe';
+export * from './contact-me/Form';
 export * from './experience/Experience';
 export * from './Footer';
 export * from './Header';

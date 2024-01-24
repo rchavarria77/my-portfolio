@@ -41,3 +41,24 @@ export interface IAchievement {
   id: number;
   text: string;
 }
+
+export interface IFormData {
+  name: string;
+  email: string;
+  message: string;
+}
+
+export interface IInput {
+  fieldName: string;
+  defaultValue?: string;
+  labelText?: string;
+  placeholder?: string;
+  inputType?: 'text' | 'email';
+  isDisabled?: boolean;
+  className?: string;
+  errors: Record<string, string>;
+  rows?: number;
+  handleChange:
+    | React.ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>
+    | undefined;
+}

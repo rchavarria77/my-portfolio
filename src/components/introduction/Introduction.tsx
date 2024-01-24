@@ -4,7 +4,7 @@ import { Description, Documentation, SocialLinks } from '@/components';
 
 export const Introduction = () => {
   return (
-    <SectionContainer className='mt-16 mb-8 '>
+    <SectionContainer className='md:mb-8 md:mt-16 '>
       <div className='flex flex-col items-center justify-between gap-4 py-8 lg:py-0 lg:flex-row'>
         <div className='flex flex-col order-1 gap-5'>
           <Badge>Open to work!</Badge>
