@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 export default {
+  darkMode: 'class',
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     fontFamily: {
@@ -73,6 +74,19 @@ export default {
           800: '#50488b',
           900: '#443f70',
           950: '#171525',
+        },
+        cararra: {
+          50: '#f8f7f4',
+          100: '#eae7dd',
+          200: '#ded9ca',
+          300: '#c9c0a8',
+          400: '#b2a285',
+          500: '#a28d6d',
+          600: '#957d61',
+          700: '#7d6751',
+          800: '#665446',
+          900: '#54463a',
+          950: '#2c241e',
         },
       },
     },
