@@ -33,11 +33,13 @@ export const Skills = () => {
       className='flex flex-col items-center justify-center w-full px-6 mt-16 mb-8 sm:px-12 lg:px-0 scroll-m-24'
     >
       <h2
-        className='flex items-center mb-6 text-3xl font-semibold gap-x-3 text-[rgb(255,255,255)]/80'
+        className='flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white/80'
         aria-label='Skills heading'
       >
         <ToolsIcon className='size-7' />
-        Skills
+        <span className='c-underline-animation before:bg-black dark:before:bg-white'>
+          Skills
+        </span>
       </h2>
       <div className='flex flex-wrap w-full'>
         <Card className='flex-col w-full max-w-full min-h-full text-start'>
