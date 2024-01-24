@@ -33,6 +33,7 @@ export const Footer = () => {
                   target='_blank'
                   className='text-[#6441A4]/80 hover:cursor-pointer'
                   aria-label='Twitch @midudev'
+                  rel='noreferrer'
                 >
                   @midudev
                 </a>{' '}

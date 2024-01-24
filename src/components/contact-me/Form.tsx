@@ -77,7 +77,7 @@ export const Form = () => {
             type='submit'
             className='block w-full rounded-md bg-ebony-600 px-3.5 py-2.5 text-center text-sm font-semibold text-bunker-50 shadow-sm hover:bg-ebony-500'
           >
-            Let's talk
+            Let&apos;s talk
           </button>
         </div>
       </form>

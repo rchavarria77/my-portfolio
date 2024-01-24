@@ -48,7 +48,7 @@ export const Documentation = () => {
         ariaLabel={`Let's Talk`}
       >
         <MessageIcon className='size-4 text-shark-300' />
-        <p className='text-sm text-shark-300'>Let's Talk</p>
+        <p className='text-sm text-shark-300'>Let&apos;s Talk</p>
       </SocialPill>
     </div>
   );
