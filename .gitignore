@@ -13,6 +13,7 @@ dist-ssr
 *.local
 pnpm-lock.yaml
 .history
+.husky
 
 # Editor directories and files
 .vscode/*
