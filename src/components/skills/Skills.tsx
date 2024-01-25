@@ -1,3 +1,6 @@
+// Dependencies
+import { useTranslation } from 'react-i18next';
+
 // Components
 import { Card, SectionContainer, Tags } from '@/components/global-components';
 import { IconsContainer } from '@/components';
@@ -27,6 +30,10 @@ const skillSet: ITag[] = [
 ];
 
 export const Skills = () => {
+  //#region constants
+  const { t } = useTranslation();
+  //#endregion
+
   return (
     <SectionContainer
       id='skills'
@@ -34,17 +41,17 @@ export const Skills = () => {
     >
       <h2
         className='flex items-center mb-6 text-2xl font-semibold md:text-3xl gap-x-3 text-shark-950/80 dark:text-shark-100/80'
-        aria-label='Skills heading'
+        aria-label={`${t('skills.title')} heading`}
       >
         <ToolsIcon className='size-7' />
         <span className='c-underline-animation before:bg-shark-950 dark:before:bg-shark-100'>
-          Skills
+          {t('skills.title')}
         </span>
       </h2>
       <div className='flex flex-wrap w-full'>
         <Card className='flex-col w-full max-w-full min-h-full text-start'>
           <h3 className='mb-6 text-base font-normal text-center md:text-lg text-pretty'>
-            {`Technologies I’ve been working with recently`}
+            {t('skills.subTitle')}
           </h3>
           <IconsContainer icons={skillSet} />
         </Card>

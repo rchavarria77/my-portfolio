@@ -1,3 +1,6 @@
+// Dependencies
+import { useTranslation } from 'react-i18next';
+
 // Components
 import {
   SectionContainer,
@@ -15,31 +18,30 @@ import { IExperience } from '@/interfaces';
 const workExperience: IExperience[] = [
   {
     id: 1,
-    role: 'Full Stack Developer',
-    date: 'May 2019 - present',
-    company: 'Freelance',
-    description:
-      'Contributed to the development of responsive web applications for various clients across diverse industries using cutting-edge technologies such as React, Next.js, Node.js, GraphQL, and Express.js.',
+    role: 'title',
+    date: 'date',
+    company: 'company',
+    description: 'description',
     achievements: [
       {
         id: 1,
-        text: 'Created custom reusable web components, enhancing application scalability through the utilization of cutting-edge Front End Technologies.',
+        text: 'achievement1',
       },
       {
         id: 2,
-        text: 'Collaborated closely with project managers to establish precise project requirements that met client objectives.',
+        text: 'achievement2',
       },
       {
         id: 3,
-        text: 'Provided ongoing maintenance and support for over 4 client websites, ensuring their optimal performance.',
+        text: 'achievement3',
       },
       {
         id: 4,
-        text: 'Conducted thorough testing and debugging, identifying and resolving errors and technical issues before and after implementation through both unit and manual testing.',
+        text: 'achievement4',
       },
       {
         id: 5,
-        text: 'Utilized AWS services for the deployment, scaling, and monitoring of web applications and services.',
+        text: 'achievement5',
       },
     ],
     tags: [
@@ -55,19 +57,18 @@ const workExperience: IExperience[] = [
   },
   {
     id: 2,
-    role: 'Junior Application Developer',
-    date: 'July 2018 - December 2018',
-    company: 'Fundación Omar Dengo',
-    description:
-      'Contribute to the development of an educational web application using technologies such as PHP and Slim framework, Ajax, JavaScript, jQuery, HTML5, CSS, Bootstrap, and SQL Server',
+    role: 'title',
+    date: 'date',
+    company: 'company',
+    description: 'description',
     achievements: [
       {
         id: 1,
-        text: 'Worked within the Scrum development methodology, achieving a 95% completion rate for sprint tasks.',
+        text: 'achievement1',
       },
       {
         id: 2,
-        text: 'Collaborated closely with design teams to meet development requirements and enhance the overall user experience.',
+        text: 'achievement2',
       },
     ],
     tags: [
@@ -82,6 +83,10 @@ const workExperience: IExperience[] = [
 ];
 
 export const Experience = () => {
+  //#region constants
+  const { t } = useTranslation();
+  //#endregion
+
   return (
     <SectionContainer
       id='experience'
@@ -89,11 +94,11 @@ export const Experience = () => {
     >
       <h2
         className='flex items-center mb-6 text-2xl font-semibold md:text-3xl gap-x-3 text-shark-950/80 dark:text-shark-100/80'
-        aria-label='Experience heading'
+        aria-label={`${t('experience.title')} heading`}
       >
         <BriefcaseIcon className='size-7' />
         <span className='c-underline-animation before:bg-shark-950 dark:before:bg-shark-100'>
-          Experience
+          {t('experience.title')}
         </span>
       </h2>
       <Timeline experiences={workExperience} />

@@ -1,5 +1,6 @@
 // Dependencies
 import { Tooltip } from 'react-tooltip';
+import { useTranslation } from 'react-i18next';
 
 // Components
 import { SocialPill } from '@/components/global-components';
@@ -14,7 +15,10 @@ import {
 } from '@/components/icons';
 
 export const Footer = () => {
+  //#region constants
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
+  //#endregion
 
   return (
     <>
@@ -22,12 +26,12 @@ export const Footer = () => {
         <div className='flex flex-col items-center w-full max-w-sm gap-4 px-4 mx-auto text-sm font-medium lg:px-0 xs:max-w-xl sm:max-w-2xl md:max-w-4xl xl:max-w-6xl sm:flex-row lg:pt-2 sm:justify-between text-cararra-800 dark:text-shark-300'>
           <p className='flex flex-col order-1 py-2 text-center sm:text-left'>
             Copyright © Roberto Chavarria | {currentYear}
-            <span>All Rights Reserved</span>
+            <span>{t('footer.text1')}</span>
           </p>
           <div className='flex flex-col order-3 sm:order-2'>
             <p className='flex flex-col py-2 text-center '>
               <span>
-                Inspired by{' '}
+                {t('footer.text2')}{' '}
                 <a
                   href='https://www.twitch.tv/midudev'
                   target='_blank'
@@ -37,9 +41,9 @@ export const Footer = () => {
                 >
                   @midudev
                 </a>{' '}
-                design
+                {t('footer.text3')}.
               </span>
-              Made with:
+              {t('footer.text4')}:
             </p>
             <div className='flex flex-row justify-center gap-2'>
               <ViteIcon

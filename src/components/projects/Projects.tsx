@@ -1,3 +1,6 @@
+// Dependencies
+import { useTranslation } from 'react-i18next';
+
 // Components
 import {
   Card,
@@ -18,9 +21,8 @@ import { IProject } from '@/interfaces';
 const PROJECTS: IProject[] = [
   {
     id: 1,
-    title: 'CPI Website',
-    description:
-      'Official site for CPI Spanish Immersion School located in Costa Rica. This website provides a comprehensive overview of their programs, locations, and the unique experiences they offer.',
+    title: 'title',
+    description: 'description',
     url: 'https://www.cpi-edu.com/',
     image: '/assets/cpi.webp',
     type: 'client',
@@ -28,9 +30,8 @@ const PROJECTS: IProject[] = [
   },
   {
     id: 2,
-    title: 'Touring Regal',
-    description:
-      'Touring Regal is dedicated to transforming the transportation experience in Costa Rica, aligning with a distinctive mission and vision that encapsulates their commitment to excellence, safety, and sustainability.',
+    title: 'title',
+    description: 'description',
     url: 'https://touringregal.com/',
     image: '/assets/tr.webp',
     type: 'client',
@@ -39,6 +40,10 @@ const PROJECTS: IProject[] = [
 ];
 
 export const Projects = () => {
+  //#region constants
+  const { t } = useTranslation();
+  //#endregion
+
   return (
     <>
       <SectionContainer
@@ -47,11 +52,11 @@ export const Projects = () => {
       >
         <h2
           className='flex items-center mb-6 text-2xl font-semibold md:text-3xl gap-x-3 text-shark-950/80 dark:text-shark-100/80'
-          aria-label='Projects heading'
+          aria-label={`${t('projects.title')} heading`}
         >
           <CodeIcon className='size-7' />
           <span className='c-underline-animation before:bg-shark-950 dark:before:bg-shark-100'>
-            Projects
+            {t('projects.title')}
           </span>
         </h2>
         <div className='flex flex-col gap-4 md:flex-row'>
@@ -61,12 +66,12 @@ export const Projects = () => {
                 <Card className='justify-between'>
                   <div className='flex flex-row items-center justify-between'>
                     <h3 className='mb-2 text-lg font-semibold md:text-2xl text-cararra-900 dark:text-ebony-200'>
-                      {title}
+                      {t(`projects.project${id}.${title}`)}
                     </h3>
                     <ProjectType type={type} />
                   </div>
                   <p className='text-base font-normal md:text-lg text-pretty'>
-                    {description}
+                    {t(`projects.project${id}.${description}`)}
                   </p>
                   <TechnologiesStack tags={tags} className='mt-4' />
                   <img
@@ -82,7 +87,7 @@ export const Projects = () => {
                       className='text-xs md:text-sm'
                     >
                       <InternetIcon />
-                      Visit the website
+                      {t(`projects.buttonText`)}
                     </LinkButton>
                   </div>
                 </Card>

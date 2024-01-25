@@ -1,3 +1,6 @@
+// Dependencies
+import { useTranslation } from 'react-i18next';
+
 // Components
 import { Button, SocialPill } from '@/components/global-components';
 
@@ -5,6 +8,10 @@ import { Button, SocialPill } from '@/components/global-components';
 import { DownloadIcon, MessageIcon } from '@/components/icons';
 
 export const Documentation = () => {
+  //#region constants
+  const { t } = useTranslation();
+  //#endregion
+
   //#region functions
   const handleDownload = () => {
     const xhr = new XMLHttpRequest();
@@ -37,7 +44,9 @@ export const Documentation = () => {
       >
         <DownloadIcon className='size-4' />
         <p className='flex items-center text-sm'>
-          <span className='hidden lg:flex'>Download &nbsp;</span>
+          <span className='hidden lg:flex'>
+            {t('documentation.download')} &nbsp;
+          </span>
           <span>CV</span>
         </p>
       </Button>
@@ -49,7 +58,7 @@ export const Documentation = () => {
       >
         <MessageIcon className='size-4 text-cararra-800 dark:text-shark-300' />
         <p className='text-sm text-cararra-800 dark:text-shark-300'>
-          Let&apos;s Talk
+          {t('documentation.talk')}
         </p>
       </SocialPill>
     </div>

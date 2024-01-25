@@ -2,6 +2,7 @@
 import { FormProvider, SubmitHandler, useForm } from 'react-hook-form';
 import { object, string } from 'zod';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { zodResolver } from '@hookform/resolvers/zod';
 
 // Components
@@ -27,6 +28,8 @@ const initialFormData: IFormData = {
 };
 
 export const Form = () => {
+  //#region constants
+  const { t } = useTranslation();
   const methods = useForm<IFormData>({
     resolver: zodResolver(schema),
     defaultValues: initialFormData,
@@ -36,6 +39,7 @@ export const Form = () => {
     reset,
     formState: { isSubmitting },
   } = methods;
+  //#endregion
 
   //#region useStates
   const [formKey, setFormKey] = useState<number>(0);
@@ -60,20 +64,20 @@ export const Form = () => {
       >
         <TextInput
           fieldName='name'
-          labelText='Full Name'
+          labelText={t('contact.form.input1.title')}
           placeholder='John Doe'
           isRequired
         />
         <TextInput
           fieldName='email'
-          labelText='Email'
+          labelText={t('contact.form.input2.title')}
           placeholder='johndoe@gmail.com'
           isRequired
         />
         <TextAreaInput
           fieldName='message'
-          labelText='Message'
-          placeholder='Type your message'
+          labelText={t('contact.form.input3.title')}
+          placeholder={t('contact.form.input3.placeholder')}
           isRequired
         />
         <div className='mt-10'>
@@ -82,7 +86,7 @@ export const Form = () => {
             disabled={isSubmitting}
             className='block w-full rounded-md bg-cararra-600 dark:bg-ebony-600 px-3.5 py-2.5 text-center text-sm font-semibold text-bunker-50 shadow-sm hover:bg-cararra-500 dark:hover:bg-ebony-500 disabled:bg-cararra-800/40 disabled:text-cararra-100 dark:disabled:bg-ebony-800/40 dark:disabled:text-ebony-100 disabled:cursor-progress'
           >
-            Let&apos;s talk
+            {t('contact.form.buttonText')}
           </button>
         </div>
       </form>

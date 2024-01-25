@@ -1,3 +1,6 @@
+// Dependencies
+import { useTranslation } from 'react-i18next';
+
 // Components
 import { Card, SectionContainer } from '@/components/global-components';
 import { DescriptionContainer, ImageContainer } from '@/components';
@@ -6,6 +9,10 @@ import { DescriptionContainer, ImageContainer } from '@/components';
 import { UserCheckIcon } from '@/components/icons';
 
 export const AboutMe = () => {
+  //#region constants
+  const { t } = useTranslation();
+  //#endregion
+
   return (
     <SectionContainer
       id='about-me'
@@ -13,11 +20,11 @@ export const AboutMe = () => {
     >
       <h2
         className='flex items-center mb-6 text-2xl font-semibold md:text-3xl gap-x-3 text-shark-950/80 dark:text-shark-100/80'
-        aria-label='About Me heading'
+        aria-label={`${t('about.title')} heading`}
       >
         <UserCheckIcon className='size-7' />
         <span className='c-underline-animation before:bg-shark-950 dark:before:bg-shark-100'>
-          About Me
+          {t('about.title')}
         </span>
       </h2>
       <Card className='justify-center max-w-full'>

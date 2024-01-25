@@ -1,24 +1,19 @@
+// Dependencies
+import { useTranslation } from 'react-i18next';
+
 // Icons
-import { FlutterIcon, PythonIcon, ReactIcon } from '../icons';
+import { FlutterIcon, PythonIcon, ReactIcon } from '@/components/icons';
 
 export const DescriptionContainer = () => {
+  //#region constants
+  const { t } = useTranslation();
+  //#endregion
+
   return (
     <div className='flex flex-col w-full md:w-[60%] gap-y-4 text-base text-center md:text-start md:text-lg order-2 md:order-1'>
-      <p>
-        Nostrud eu non in velit commodo in deserunt ad ut proident nulla
-        exercitation id. Esse commodo aliqua nulla Lorem ex nisi aute laboris
-        magna. Velit ut labore labore Lorem adipisicing dolor eiusmod
-        consectetur labore ipsum. Esse exercitation est elit aliquip enim ipsum
-        elit.
-      </p>
-      <p>
-        Nostrud eu non in velit commodo in deserunt ad ut proident nulla
-        exercitation id. Esse commodo aliqua nulla Lorem ex nisi aute laboris
-        magna. Velit ut labore labore Lorem adipisicing dolor eiusmod
-        consectetur labore ipsum. Esse exercitation est elit aliquip enim ipsum
-        elit.
-      </p>
-      <span className='mt-4'>Interested in learning:</span>
+      <p>{t('about.text1')}</p>
+      <p>{t('about.text2')}</p>
+      <span className='mt-4'>{t('about.text3')}:</span>
       <div className='flex justify-center text-xs md:justify-start md:text-sm gap-x-4'>
         <span className='flex flex-col items-center gap-y-1'>
           <PythonIcon className='size-8' />

@@ -1,9 +1,10 @@
 // Dependencies
 import { twMerge } from 'tailwind-merge';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 // Components
-import { ThemeSwitcher } from '@/components';
+import { LanguageSelector, ThemeSwitcher } from '@/components';
 
 // Icons
 import { CloseIcon, MenuIcon } from '@/components/icons';
@@ -12,6 +13,10 @@ import { CloseIcon, MenuIcon } from '@/components/icons';
 import { IMenuOption } from '@/interfaces';
 
 export const Navbar = ({ navigation }: { navigation: IMenuOption[] }) => {
+  //#region constants
+  const { t } = useTranslation();
+  //#endregion
+
   //#region useStates
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('');
@@ -95,12 +100,13 @@ export const Navbar = ({ navigation }: { navigation: IMenuOption[] }) => {
                   aria-current='page'
                   aria-label='hamburger menu'
                 >
-                  {name}
+                  {t(`navbar.${name}`)}
                 </a>
               </li>
             ))}
-            <li className='pt-6 mt-2 border-t md:m-0 md:pt-0 md:border-none'>
+            <li className='flex pt-6 mt-2 border-t gap-x-3 md:m-0 md:pt-0 md:border-none'>
               <ThemeSwitcher />
+              <LanguageSelector />
             </li>
           </ul>
         </div>

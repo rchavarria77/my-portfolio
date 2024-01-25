@@ -1,8 +1,9 @@
+// Dependencies
+import { twMerge } from 'tailwind-merge';
 import { useState } from 'react';
 
 // Styles
 import '@/styles/Buttons.css';
-import { twMerge } from 'tailwind-merge';
 
 export const ThemeSwitcher = () => {
   //#region useStates
@@ -10,6 +11,7 @@ export const ThemeSwitcher = () => {
   const [formKey, setFormKey] = useState<number>(0);
   //#endregion
 
+  //#region functions
   const handleClick = () => {
     if (localStorage.theme === 'light') {
       document.documentElement.classList.remove('light');
@@ -25,6 +27,7 @@ export const ThemeSwitcher = () => {
 
     setFormKey((prevKey) => prevKey + 1);
   };
+  //#endregion
 
   return (
     <label

@@ -8,11 +8,11 @@ import { IMenuOption } from '@/interfaces';
 import '@/styles/App.css';
 
 const headerMenuOptions: IMenuOption[] = [
-  { id: 1, name: 'Experience', href: '#experience' },
-  { id: 2, name: 'Projects', href: '#projects' },
-  { id: 3, name: 'Skills', href: '#skills' },
-  { id: 4, name: 'About', href: '#about-me' },
-  { id: 5, name: 'Contact', href: '#contact' },
+  { id: 1, name: 'experience', href: '#experience' },
+  { id: 2, name: 'projects', href: '#projects' },
+  { id: 3, name: 'skills', href: '#skills' },
+  { id: 4, name: 'about', href: '#about-me' },
+  { id: 5, name: 'contact', href: '#contact' },
 ];
 
 const App = () => {
