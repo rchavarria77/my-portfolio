@@ -27,7 +27,11 @@ export const ThemeSwitcher = () => {
   };
 
   return (
-    <label key={formKey} className='switch' onClick={handleClick}>
+    <label
+      key={formKey}
+      className='text-xs md:text-md switch'
+      onClick={handleClick}
+    >
       <input
         type='checkbox'
         checked={isDarkMode}

@@ -53,7 +53,7 @@ export const Navbar = ({ navigation }: { navigation: IMenuOption[] }) => {
       aria-label='Global'
     >
       <div className='container flex flex-wrap items-center justify-between mx-auto'>
-        <a href='#' className='flex'>
+        <a href='#' className='flex' onClick={() => setMobileMenuOpen(false)}>
           <img
             src='/assets/logo-black.svg'
             className='w-20'
@@ -63,7 +63,7 @@ export const Navbar = ({ navigation }: { navigation: IMenuOption[] }) => {
         <button
           data-collapse-toggle='mobile-menu'
           type='button'
-          className='inline-flex items-center justify-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300'
+          className='inline-flex items-center justify-center ml-3 rounded-lg text-shark-400 md:hidden hover:text-shark-900'
           aria-controls='mobile-menu-2'
           aria-expanded='false'
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -80,7 +80,7 @@ export const Navbar = ({ navigation }: { navigation: IMenuOption[] }) => {
           )}
           id='mobile-menu'
         >
-          <ul className='flex flex-col items-center p-4 mt-4 font-medium rounded-lg md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0'>
+          <ul className='flex flex-col p-4 mt-4 font-medium rounded-lg md:items-center md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0'>
             {navigation.map(({ id, name, href }) => (
               <li key={id}>
                 <a
@@ -91,6 +91,7 @@ export const Navbar = ({ navigation }: { navigation: IMenuOption[] }) => {
                       ? 'bg-cararra-500 text-shark-100 dark:bg-ebony-200  dark:text-shark-950'
                       : ''
                   )}
+                  onClick={() => setMobileMenuOpen(false)}
                   aria-current='page'
                   aria-label='hamburger menu'
                 >

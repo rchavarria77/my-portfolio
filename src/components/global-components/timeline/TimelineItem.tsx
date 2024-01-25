@@ -38,17 +38,17 @@ export const TimelineItem = ({
       </span>
       <Card className='min-h-full'>
         <div className='flex flex-col justify-between sm:flex-row'>
-          <h3 className='flex items-center mb-1 text-2xl font-semibold text-cararra-900 dark:text-ebony-200'>
+          <h3 className='flex items-center mb-1 text-lg font-semibold md:text-2xl text-cararra-900 dark:text-ebony-200'>
             {role}
           </h3>
-          <time className='flex items-center justify-start gap-1 mb-2 text-sm font-normal leading-none dark:text-shark-300 text-cararra-800 sm:items-center sm:flex-row'>
+          <time className='flex items-center justify-start gap-1 mb-2 text-xs font-normal leading-none md:text-sm dark:text-shark-300 text-cararra-800 sm:items-center sm:flex-row'>
             <CalendarIcon className='size-6 md:size-4' /> {date}
           </time>
         </div>
         <span className='flex items-center gap-1 mb-2 text-sm font-normal leading-none dark:text-shark-300 text-cararra-800'>
           <MapPinIcon className='size-4' /> {company}
         </span>
-        <span className='flex flex-col mb-4 text-lg font-normal text-pretty'>
+        <span className='flex flex-col mb-4 text-base font-normal md:text-lg text-pretty'>
           {description}
           <span className='pl-4 mt-2 text-md'>
             <ul

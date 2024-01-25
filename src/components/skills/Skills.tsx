@@ -33,7 +33,7 @@ export const Skills = () => {
       className='flex flex-col items-center justify-center w-full px-6 mt-16 mb-8 sm:px-12 lg:px-0 scroll-m-24'
     >
       <h2
-        className='flex items-center mb-6 text-3xl font-semibold gap-x-3 text-shark-950/80 dark:text-shark-100/80'
+        className='flex items-center mb-6 text-2xl font-semibold md:text-3xl gap-x-3 text-shark-950/80 dark:text-shark-100/80'
         aria-label='Skills heading'
       >
         <ToolsIcon className='size-7' />
@@ -43,7 +43,7 @@ export const Skills = () => {
       </h2>
       <div className='flex flex-wrap w-full'>
         <Card className='flex-col w-full max-w-full min-h-full text-start'>
-          <h3 className='mb-6 text-lg font-medium text-center'>
+          <h3 className='mb-6 text-base font-normal text-center md:text-lg text-pretty'>
             {`Technologies I’ve been working with recently`}
           </h3>
           <IconsContainer icons={skillSet} />

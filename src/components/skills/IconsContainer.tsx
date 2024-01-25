@@ -7,7 +7,7 @@ export const IconsContainer = ({ icons }: { icons: ITag[] }) => {
       {icons.map((item) => (
         <li
           key={item.name}
-          className='flex flex-col items-center font-normal gap-y-2'
+          className='flex flex-col items-center text-xs font-normal md:text-md gap-y-2'
         >
           <item.icon className='size-12' />
           {item.name}

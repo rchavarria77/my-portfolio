@@ -46,7 +46,7 @@ export const Projects = () => {
         className='flex flex-col items-center justify-center w-full px-6 mt-16 mb-8 sm:px-12 lg:px-0 scroll-m-24'
       >
         <h2
-          className='flex items-center mb-6 text-3xl font-semibold gap-x-3 text-shark-950/80 dark:text-shark-100/80'
+          className='flex items-center mb-6 text-2xl font-semibold md:text-3xl gap-x-3 text-shark-950/80 dark:text-shark-100/80'
           aria-label='Projects heading'
         >
           <CodeIcon className='size-7' />
@@ -60,12 +60,14 @@ export const Projects = () => {
               <article key={id} className='flex'>
                 <Card className='justify-between'>
                   <div className='flex flex-row items-center justify-between'>
-                    <h3 className='mb-2 text-2xl font-semibold text-cararra-900 dark:text-ebony-200'>
+                    <h3 className='mb-2 text-lg font-semibold md:text-2xl text-cararra-900 dark:text-ebony-200'>
                       {title}
                     </h3>
                     <ProjectType type={type} />
                   </div>
-                  <p className='text-lg text-pretty'>{description}</p>
+                  <p className='text-base font-normal md:text-lg text-pretty'>
+                    {description}
+                  </p>
                   <TechnologiesStack tags={tags} className='mt-4' />
                   <img
                     src={image}
@@ -74,7 +76,11 @@ export const Projects = () => {
                     className='rounded shadow-2xl shadow-cararra-950/10 dark:shadow-shark-100/10 aspect-video'
                   />
                   <div className='flex items-end justify-start mt-6 gap-x-4'>
-                    <LinkButton href={url} ariaLabel='Visit the website'>
+                    <LinkButton
+                      href={url}
+                      ariaLabel='Visit the website'
+                      className='text-xs md:text-sm'
+                    >
                       <InternetIcon />
                       Visit the website
                     </LinkButton>
