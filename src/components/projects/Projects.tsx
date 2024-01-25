@@ -46,11 +46,11 @@ export const Projects = () => {
         className='flex flex-col items-center justify-center w-full px-6 mt-16 mb-8 sm:px-12 lg:px-0 scroll-m-24'
       >
         <h2
-          className='flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white/80'
+          className='flex items-center mb-6 text-3xl font-semibold gap-x-3 text-shark-950/80 dark:text-shark-100/80'
           aria-label='Projects heading'
         >
           <CodeIcon className='size-7' />
-          <span className='c-underline-animation before:bg-black dark:before:bg-white'>
+          <span className='c-underline-animation before:bg-shark-950 dark:before:bg-shark-100'>
             Projects
           </span>
         </h2>
@@ -60,7 +60,7 @@ export const Projects = () => {
               <article key={id} className='flex'>
                 <Card className='justify-between'>
                   <div className='flex flex-row items-center justify-between'>
-                    <h3 className='text-2xl font-semibold text-[rgb(254,240,138)] mb-2'>
+                    <h3 className='mb-2 text-2xl font-semibold text-cararra-900 dark:text-ebony-200'>
                       {title}
                     </h3>
                     <ProjectType type={type} />
@@ -71,7 +71,7 @@ export const Projects = () => {
                     src={image}
                     alt={`Project screenshot of ${image}`}
                     loading='lazy'
-                    className='rounded shadow-2xl shadow-[rgb(255,255,255)]/10 aspect-video'
+                    className='rounded shadow-2xl shadow-cararra-950/10 dark:shadow-shark-100/10 aspect-video'
                   />
                   <div className='flex items-end justify-start mt-6 gap-x-4'>
                     <LinkButton href={url} ariaLabel='Visit the website'>

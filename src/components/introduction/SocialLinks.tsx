@@ -12,7 +12,7 @@ export const SocialLinks = () => {
         className='hover:scale-110'
         ariaLabel='LinkedIn'
       >
-        <LinkedInIcon className='size-5 md:size-6' />
+        <LinkedInIcon className='size-5 md:size-6' fill='#0000 dark:#FFFF' />
       </SocialPill>
       <SocialPill
         href='https://github.com/rchavarria77'

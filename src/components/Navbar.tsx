@@ -55,8 +55,8 @@ export const Navbar = ({ navigation }: { navigation: IMenuOption[] }) => {
       <div className='container flex flex-wrap items-center justify-between mx-auto'>
         <a href='#' className='flex'>
           <img
-            src='/logo-no-background.svg'
-            className='w-16 h-8'
+            src='/assets/logo-black.svg'
+            className='w-20'
             alt='roberto logo photo'
           />
         </a>
@@ -86,8 +86,10 @@ export const Navbar = ({ navigation }: { navigation: IMenuOption[] }) => {
                 <a
                   href={href}
                   className={twMerge(
-                    'block px-2 py-2 text-[rgb(255,255,255)] rounded-full hover:bg-ebony-200 hover:text-cod-gray-950',
-                    activeLink === href ? 'bg-ebony-200 text-cod-gray-950' : ''
+                    'block px-2 py-2 rounded-full hover:bg-cararra-500 hover:text-shark-100 dark:hover:bg-ebony-200 dark:hover:text-shark-950 hover:scale-110',
+                    activeLink === href
+                      ? 'bg-cararra-500 text-shark-100 dark:bg-ebony-200  dark:text-shark-950'
+                      : ''
                   )}
                   aria-current='page'
                   aria-label='hamburger menu'

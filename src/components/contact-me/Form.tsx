@@ -31,7 +31,11 @@ export const Form = () => {
     resolver: zodResolver(schema),
     defaultValues: initialFormData,
   });
-  const { handleSubmit, reset } = methods;
+  const {
+    handleSubmit,
+    reset,
+    formState: { isSubmitting },
+  } = methods;
 
   //#region useStates
   const [formKey, setFormKey] = useState<number>(0);
@@ -75,7 +79,8 @@ export const Form = () => {
         <div className='mt-10'>
           <button
             type='submit'
-            className='block w-full rounded-md bg-ebony-600 px-3.5 py-2.5 text-center text-sm font-semibold text-bunker-50 shadow-sm hover:bg-ebony-500'
+            disabled={isSubmitting}
+            className='block w-full rounded-md bg-cararra-600 dark:bg-ebony-600 px-3.5 py-2.5 text-center text-sm font-semibold text-bunker-50 shadow-sm hover:bg-cararra-500 dark:hover:bg-ebony-500 disabled:bg-cararra-800/40 disabled:text-cararra-100 dark:disabled:bg-ebony-800/40 dark:disabled:text-ebony-100 disabled:cursor-progress'
           >
             Let&apos;s talk
           </button>
