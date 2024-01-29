@@ -7,15 +7,17 @@ export const LinkButton = ({
   className,
   ariaLabel,
   target = '_blank',
-}: {
+  ...restProps
+}: React.AnchorHTMLAttributes<HTMLAnchorElement> & {
   href: string;
-  children: any;
+  children: React.ReactNode;
   className?: string;
   ariaLabel?: string;
   target?: string;
 }) => {
   return (
     <a
+      {...restProps}
       href={href}
       target={target}
       className={twMerge(
