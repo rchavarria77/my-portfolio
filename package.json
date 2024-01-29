@@ -1,8 +1,19 @@
 {
   "name": "my-portfolio",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
+  "description": "",
+  "author": "Roberto Chavarria <rchavarria77@outlook.com>",
+  "homepage": "https://github.com/rchavarria77/my-portfolio#readme",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rchavarria77/my-portfolio.git"
+  },
+  "engines": {
+    "pnpm": ">=8.11.0",
+    "node": ">=18.16.0"
+  },
   "scripts": {
     "dev": "vite --port 3000",
     "build": "tsc && vite build",
@@ -15,26 +26,26 @@
     "@emailjs/browser": "3.12.1",
     "@fontsource-variable/onest": "5.0.2",
     "@hookform/resolvers": "3.3.4",
-    "i18next": "^23.7.19",
+    "i18next": "23.8.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "7.49.3",
-    "react-i18next": "^14.0.1",
+    "react-i18next": "14.0.1",
     "react-tooltip": "5.26.0",
     "zod": "3.22.4"
   },
   "devDependencies": {
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
-    "@typescript-eslint/eslint-plugin": "6.19.1",
-    "@typescript-eslint/parser": "6.19.1",
+    "@typescript-eslint/eslint-plugin": "6.20.0",
+    "@typescript-eslint/parser": "6.20.0",
     "@vitejs/plugin-react-swc": "3.5.0",
     "autoprefixer": "10.4.17",
     "eslint": "8.56.0",
     "eslint-plugin-react": "7.33.2",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-react-refresh": "0.4.5",
-    "husky": "^8.0.0",
+    "husky": "9.0.7",
     "lint-staged": "15.2.0",
     "postcss": "8.4.33",
     "tailwind-merge": "2.2.1",
@@ -44,7 +55,7 @@
     "vite": "5.0.12",
     "vite-plugin-pages": "0.32.0",
     "vite-plugin-pages-sitemap": "1.6.1",
-    "vite-plugin-sitemap": "^0.5.3",
+    "vite-plugin-sitemap": "0.5.3",
     "vite-tsconfig-paths": "4.3.1"
   },
   "husky": {
