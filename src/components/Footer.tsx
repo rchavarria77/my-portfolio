@@ -67,7 +67,7 @@ export const Footer = () => {
               href='https://github.com/rchavarria77/my-portfolio'
               target='_blank'
               rel='noreferrer'
-              className='flex items-center justify-center mt-2 text-gray-200 dark:text-gray-500 gap-x-1 hover:underline'
+              className='flex items-center justify-center mt-2 text-gray-600 dark:text-gray-500 gap-x-1 hover:underline'
             >
               View Code
               <ExternalLinkIcon className='size-5' />
