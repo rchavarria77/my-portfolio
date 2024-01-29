@@ -8,6 +8,7 @@ export * from './CircleArrowUpIcon';
 export * from './CloseIcon';
 export * from './CodeIcon';
 export * from './DownloadIcon';
+export * from './ExternalLinkIcon';
 export * from './InternetIcon';
 export * from './MailForwardIcon';
 export * from './MapPinIcon';

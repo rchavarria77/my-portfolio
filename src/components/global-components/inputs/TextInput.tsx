@@ -46,7 +46,7 @@ export const TextInput = ({
               aria-describedby={`${fieldName}-error`}
               autoComplete='off'
               className={twMerge(
-                'rounded-md dark:bg-dark-100 bg-white px-3.5 py-2 sm:text-sm sm:leading-6 w-full dark:text-dark-950',
+                'rounded-md dark:bg-ebony-100 bg-white px-3.5 py-2 sm:text-sm sm:leading-6 w-full dark:text-ebony-950',
                 className,
                 errors[fieldName] ? 'border-red-500 border' : ''
               )}

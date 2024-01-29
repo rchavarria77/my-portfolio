@@ -44,7 +44,7 @@ export const ThemeSwitcher = () => {
       <span
         className={twMerge(
           'slider',
-          isDarkMode ? 'bg-dark-900' : 'bg-light-300'
+          isDarkMode ? 'bg-ebony-900' : 'bg-ebony-300'
         )}
       />
     </label>

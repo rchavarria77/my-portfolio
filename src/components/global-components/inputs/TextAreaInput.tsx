@@ -46,7 +46,7 @@ export const TextAreaInput = ({
               autoComplete='off'
               rows={rows}
               className={twMerge(
-                'rounded-md dark:bg-dark-100 bg-white px-3.5 py-2 sm:text-sm sm:leading-6 w-full',
+                'rounded-md dark:bg-ebony-100 bg-white px-3.5 py-2 sm:text-sm sm:leading-6 w-full',
                 className,
                 errors[fieldName] ? 'border-red-500 border' : ''
               )}

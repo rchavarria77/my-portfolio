@@ -7,6 +7,7 @@ import { SocialPill } from '@/components/global-components';
 
 // Icons
 import {
+  ExternalLinkIcon,
   GitHubIcon,
   LinkedInIcon,
   ReactIcon,
@@ -23,7 +24,7 @@ export const Footer = () => {
   return (
     <>
       <footer className='flex flex-col items-center justify-center w-full px-6 py-8 bg-black/20 sm:px-12 lg:px-0 scroll-m-24'>
-        <div className='flex flex-col items-center w-full max-w-sm gap-4 px-4 mx-auto text-sm font-medium lg:px-0 xs:max-w-xl sm:max-w-2xl md:max-w-4xl xl:max-w-6xl sm:flex-row lg:pt-2 sm:justify-between text-light-800 dark:text-dark-300'>
+        <div className='flex flex-col items-center w-full max-w-sm gap-4 px-4 mx-auto text-sm font-medium sm:items-start lg:px-0 xs:max-w-xl sm:max-w-2xl md:max-w-4xl xl:max-w-6xl sm:flex-row lg:pt-2 sm:justify-between text-ebony-950 dark:text-ebony-50'>
           <p className='flex flex-col order-1 py-2 text-center sm:text-left'>
             Copyright © Roberto Chavarria | {currentYear}
             <span>{t('footer.text1')}</span>
@@ -62,6 +63,15 @@ export const Footer = () => {
                 className='cursor-pointer size-4'
               />
             </div>
+            <a
+              href='https://github.com/rchavarria77/my-portfolio'
+              target='_blank'
+              rel='noreferrer'
+              className='flex items-center justify-center mt-2 text-gray-200 dark:text-gray-500 gap-x-1 hover:underline'
+            >
+              View Code
+              <ExternalLinkIcon className='size-5' />
+            </a>
           </div>
           <div className='flex items-center order-2 sm:order-3'>
             <SocialPill

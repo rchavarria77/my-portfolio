@@ -41,20 +41,20 @@ export const TimelineItem = ({
 
   return (
     <li className='mb-10 ms-6'>
-      <span className='ml-[-2.3rem] flex items-center justify-center w-6 h-6 rounded-full bg-light-400 ring-light-400 dark:bg-dark-900 -start-3 ring-8 dark:ring-dark-900'>
+      <span className='ml-[-2.3rem] flex items-center justify-center w-6 h-6 rounded-full bg-ebony-400 ring-ebony-400 dark:bg-ebony-900 -start-3 ring-8 dark:ring-ebony-900'>
         <BriefcaseIcon />
       </span>
       <Card className='min-h-full'>
         <div className='flex flex-col justify-between sm:flex-row'>
-          <h3 className='flex items-center mb-1 text-lg font-semibold md:text-2xl text-light-900 dark:text-dark-200'>
+          <h3 className='flex items-center mb-1 text-lg font-semibold md:text-2xl text-ebony-900 dark:text-ebony-200'>
             {t(`experience.role${id}.${role}`)}
           </h3>
-          <time className='flex items-center justify-start gap-1 mb-2 text-xs font-normal leading-none md:text-sm dark:text-dark-300 text-light-800 sm:items-center sm:flex-row'>
+          <time className='flex items-center justify-start gap-1 mb-2 text-xs font-normal leading-none md:text-sm dark:text-ebony-300 text-ebony-800 sm:items-center sm:flex-row'>
             <CalendarIcon className='size-6 md:size-4' />{' '}
             {t(`experience.role${id}.${date}`)}
           </time>
         </div>
-        <span className='flex items-center gap-1 mb-2 text-sm font-normal leading-none dark:text-dark-300 text-light-800'>
+        <span className='flex items-center gap-1 mb-2 text-sm font-normal leading-none dark:text-ebony-300 text-ebony-800'>
           <MapPinIcon className='size-4' />{' '}
           {t(`experience.role${id}.${company}`)}
         </span>

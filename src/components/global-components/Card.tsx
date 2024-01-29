@@ -11,7 +11,7 @@ export const Card = ({
   return (
     <div
       className={twMerge(
-        'flex flex-col bg-light-950/25 dark:bg-dark-900/25 w-full max-w-4xl min-h-[460px] rounded-3xl p-6 shadow-2xl',
+        'flex flex-col bg-ebony-950/25 dark:bg-ebony-900/25 w-full max-w-4xl min-h-[460px] rounded-3xl p-6 shadow-2xl',
         className
       )}
     >

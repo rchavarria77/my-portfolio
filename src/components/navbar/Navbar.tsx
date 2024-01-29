@@ -91,9 +91,9 @@ export const Navbar = ({ navigation }: { navigation: IMenuOption[] }) => {
                 <a
                   href={href}
                   className={twMerge(
-                    'block px-2 py-2 rounded-full hover:bg-light-500 hover:text-light-100 dark:hover:bg-dark-200 dark:hover:text-dark-950 hover:scale-110',
+                    'block px-2 py-2 rounded-full hover:bg-ebony-500 hover:text-ebony-100 dark:hover:bg-ebony-200 dark:hover:text-ebony-950 hover:scale-110',
                     activeLink === href
-                      ? 'bg-light-500 text-light-100 dark:bg-dark-200  dark:text-dark-950'
+                      ? 'bg-ebony-500 text-ebony-100 dark:bg-ebony-200  dark:text-ebony-950'
                       : ''
                   )}
                   onClick={() => setMobileMenuOpen(false)}

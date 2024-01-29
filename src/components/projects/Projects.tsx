@@ -51,11 +51,11 @@ export const Projects = () => {
         className='flex flex-col items-center justify-center w-full px-6 mt-16 mb-8 sm:px-12 lg:px-0 scroll-m-24'
       >
         <h2
-          className='flex items-center mb-6 text-2xl font-semibold md:text-3xl gap-x-3 text-light-950/80 dark:text-dark-100/80'
+          className='flex items-center mb-6 text-2xl font-semibold md:text-3xl gap-x-3 text-ebony-950/80 dark:text-ebony-100/80'
           aria-label={`${t('projects.title')} heading`}
         >
           <CodeIcon className='size-7' />
-          <span className='c-underline-animation before:bg-light-950 dark:before:bg-dark-100'>
+          <span className='c-underline-animation before:bg-ebony-950 dark:before:bg-ebony-100'>
             {t('projects.title')}
           </span>
         </h2>
@@ -65,7 +65,7 @@ export const Projects = () => {
               <article key={id} className='flex'>
                 <Card className='justify-between'>
                   <div className='flex flex-row items-center justify-between'>
-                    <h3 className='mb-2 text-lg font-semibold md:text-2xl text-light-900 dark:text-dark-200'>
+                    <h3 className='mb-2 text-lg font-semibold md:text-2xl text-ebony-900 dark:text-ebony-200'>
                       {t(`projects.project${id}.${title}`)}
                     </h3>
                     <ProjectType type={type} />
@@ -78,7 +78,7 @@ export const Projects = () => {
                     src={image}
                     alt={`Project screenshot of ${image}`}
                     loading='lazy'
-                    className='rounded shadow-2xl shadow-light-950/10 dark:shadow-dark-100/10 aspect-video'
+                    className='rounded shadow-2xl shadow-ebony-950/10 dark:shadow-ebony-100/10 aspect-video'
                   />
                   <div className='flex items-end justify-start mt-6 gap-x-4'>
                     <LinkButton

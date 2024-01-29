@@ -93,11 +93,11 @@ export const Experience = () => {
       className='flex flex-col items-center justify-center w-full px-6 mt-16 mb-8 sm:px-12 lg:px-0 scroll-m-24'
     >
       <h2
-        className='flex items-center mb-6 text-2xl font-semibold md:text-3xl gap-x-3 text-light-950/80 dark:text-dark-100/80'
+        className='flex items-center mb-6 text-2xl font-semibold md:text-3xl gap-x-3 text-ebony-950/80 dark:text-ebony-100/80'
         aria-label={`${t('experience.title')} heading`}
       >
         <BriefcaseIcon className='size-7' />
-        <span className='c-underline-animation before:bg-light-950 dark:before:bg-dark-100'>
+        <span className='c-underline-animation before:bg-ebony-950 dark:before:bg-ebony-100'>
           {t('experience.title')}
         </span>
       </h2>
