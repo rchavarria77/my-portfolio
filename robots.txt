@@ -1,8 +1,0 @@
-User-agent: *
-Disallow: /api/  # Disallow crawling API routes (if any)
-Disallow: /admin/  # Disallow crawling any admin section
-Disallow: /login/  # Disallow crawling login pages
-Disallow: /404.html  # Disallow crawling the custom 404 page
-Disallow: /privacy-policy/  # Disallow crawling specific pages
-
-Sitemap: https://rchavarria-portfolio.netlify.app/sitemap.xml  # Add the URL to your sitemap
