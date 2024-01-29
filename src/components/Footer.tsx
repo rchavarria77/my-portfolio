@@ -23,7 +23,7 @@ export const Footer = () => {
   return (
     <>
       <footer className='flex flex-col items-center justify-center w-full px-6 py-8 bg-black/20 sm:px-12 lg:px-0 scroll-m-24'>
-        <div className='flex flex-col items-center w-full max-w-sm gap-4 px-4 mx-auto text-sm font-medium lg:px-0 xs:max-w-xl sm:max-w-2xl md:max-w-4xl xl:max-w-6xl sm:flex-row lg:pt-2 sm:justify-between text-cararra-800 dark:text-shark-300'>
+        <div className='flex flex-col items-center w-full max-w-sm gap-4 px-4 mx-auto text-sm font-medium lg:px-0 xs:max-w-xl sm:max-w-2xl md:max-w-4xl xl:max-w-6xl sm:flex-row lg:pt-2 sm:justify-between text-light-800 dark:text-dark-300'>
           <p className='flex flex-col order-1 py-2 text-center sm:text-left'>
             Copyright © Roberto Chavarria | {currentYear}
             <span>{t('footer.text1')}</span>

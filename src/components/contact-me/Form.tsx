@@ -84,7 +84,7 @@ export const Form = () => {
           <button
             type='submit'
             disabled={isSubmitting}
-            className='block w-full rounded-md bg-cararra-600 dark:bg-ebony-600 px-3.5 py-2.5 text-center text-sm font-semibold text-bunker-50 shadow-sm hover:bg-cararra-500 dark:hover:bg-ebony-500 disabled:bg-cararra-800/40 disabled:text-cararra-100 dark:disabled:bg-ebony-800/40 dark:disabled:text-ebony-100 disabled:cursor-progress'
+            className='block w-full rounded-md bg-light-600 dark:bg-dark-600 px-3.5 py-2.5 text-center text-sm font-semibold text-light-50 shadow-sm hover:bg-light-500 dark:hover:bg-dark-500 disabled:bg-light-800/40 disabled:text-light-100 dark:disabled:bg-dark-800/40 dark:disabled:text-dark-100 disabled:cursor-progress'
           >
             {t('contact.form.buttonText')}
           </button>

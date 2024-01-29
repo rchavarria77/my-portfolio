@@ -17,7 +17,7 @@ export const Documentation = () => {
       <LinkButton
         href='/assets/cv.pdf'
         download
-        className='gap-1 bg-transparent border-none dark:bg-transparent text-cararra-800 dark:text-shark-300 hover:scale-110 min-w-max animate-pulse animate-infinite hover:animate-none'
+        className='gap-1 bg-transparent border-none dark:bg-transparent text-light-800 dark:text-dark-300 hover:scale-110 min-w-max animate-pulse animate-infinite hover:animate-none'
       >
         <DownloadIcon className='size-4' />
         <p className='flex items-center text-sm'>
@@ -30,11 +30,11 @@ export const Documentation = () => {
       <SocialPill
         href='#contact'
         target='_self'
-        className='flex flex-row justify-around w-full gap-2 border rounded-full border-cararra-950 dark:border-shark-300 lg:gap-0 hover:scale-110'
+        className='flex flex-row justify-around w-full gap-2 border rounded-full border-light-950 dark:border-dark-300 lg:gap-0 hover:scale-110'
         ariaLabel={`Let's Talk`}
       >
-        <MessageIcon className='size-4 text-cararra-800 dark:text-shark-300' />
-        <p className='text-sm text-cararra-800 dark:text-shark-300'>
+        <MessageIcon className='size-4 text-light-800 dark:text-dark-300' />
+        <p className='text-sm text-light-800 dark:text-dark-300'>
           {t('documentation.talk')}
         </p>
       </SocialPill>
