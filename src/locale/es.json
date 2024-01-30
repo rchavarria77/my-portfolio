@@ -1,0 +1,107 @@
+{
+  "translation": {
+    "navbar": {
+      "experience": "Experiencia",
+      "projects": "Proyectos",
+      "skills": "Habilidades",
+      "about": "Sobre Mí",
+      "contact": "Contacto"
+    },
+    "badge": "¡Disponible para trabajar!",
+    "description": {
+      "experience": "+4 años de experiencia laboral.",
+      "role": "Ingeniero en Sistemas y desarrollador FullStack",
+      "location": "De San Carlos, Costa Rica"
+    },
+    "documentation": {
+      "download": "Descargar",
+      "talk": "Hablemos"
+    },
+    "experience": {
+      "title": "Experiencia",
+      "role1": {
+        "title": "Desarrollador Full Stack",
+        "date": "Mayo 2019 - actualidad",
+        "company": "Trabajo independiente",
+        "description": "Contribuí al desarrollo de aplicaciones web receptivas para diversos clientes en diversas industrias utilizando tecnologías de vanguardia como React, Next.js, Node.js, GraphQL y Express.js.",
+        "achievements": {
+          "achievement1": "Contribuí al desarrollo y mejora del sistema de procesamiento de admisiones para un grupo de universidades, asegurando un procesamiento eficiente y simplificado de las aplicaciones.",
+          "achievement2": "Implementé el procesamiento de pagos de impuestos de admisión universitaria utilizando la plataforma PayPal, mejorando la eficiencia y seguridad del sistema de pago.",
+          "achievement3": "Colaboré en la construcción de un sistema de procesamiento de datos, mejorando el análisis e interpretación de datos generados por data scientists.",
+          "achievement4": "Implementé metodologías de prueba de código para detectar y corregir errores y desafíos técnicos tanto antes como después de la implementación.",
+          "achievement5": "Integré servicios de AWS para implementar, escalar y monitorear una aplicación interna de procesamiento de datos en una startup científica."
+        }
+      },
+      "role2": {
+        "title": "Desarrollador de Aplicaciones Junior",
+        "date": "Julio 2018 - Diciembre 2018",
+        "company": "Fundación Omar Dengo",
+        "description": "Contribuí al desarrollo de una aplicación web educativa utilizando tecnologías como PHP y el framework Slim, Ajax, JavaScript, jQuery, HTML5, CSS, Bootstrap y SQL Server",
+        "achievements": {
+          "achievement1": "Trabajé dentro de la metodología de desarrollo Scrum, logrando una tasa de finalización del 95% para las tareas de sprint.",
+          "achievement2": "Colaboré estrechamente con los equipos de diseño para cumplir con los requisitos de desarrollo y mejorar la experiencia general del usuario."
+        }
+      },
+      "buttonText": {
+        "main": "Leer",
+        "more": "Más",
+        "less": "Menos"
+      }
+    },
+    "projects": {
+      "title": "Proyectos",
+      "project1": {
+        "title": "Sitio web de CPI",
+        "description": "Sitio oficial de CPI Spanish Immersion School ubicada en Costa Rica. Este sitio web proporciona una visión integral de sus programas, ubicaciones y las experiencias únicas que ofrecen."
+      },
+      "project2": {
+        "title": "Touring Regal",
+        "description": "Touring Regal se dedica a transformar la experiencia de transporte en Costa Rica, alineándose con una misión y visión distintivas que encapsulan su compromiso con la excelencia, la seguridad y la sostenibilidad."
+      },
+      "buttonText": "Ir al sitio web"
+    },
+    "skills": {
+      "title": "Habilidades",
+      "subTitle": "Tecnologías con las que he trabajado recientemente"
+    },
+    "about": {
+      "title": "Acerca de Mí",
+      "text1": {
+        "pt1": "Mi nombre es Roberto Chavarría, un Desarrollador Full Stack con más de 4 años de experiencia práctica en desarrollo web",
+        "hgt1": "utilizando los principales frameworks de JavaScript, como Next.js, React, Angular y Node.js."
+      },
+      "text2": {
+        "pt1": "Mi trayectoria en el desarrollo web incluye logros impactantes, como colaborar con una startup para",
+        "hgt1": "construir una aplicación crucial para el procesamiento de conjuntos de datos extensos ",
+        "pt2": "de sus científicos de datos. Además, tengo un historial comprobado en la gestión de proyectos independientes y la entrega de ",
+        "hgt2": "plataformas responsivas."
+      },
+      "text3": "Me apasiona aprovechar la tecnología para resolver desafíos complejos y colaborar en proyectos innovadores, creando soluciones web de última generación con las últimas tecnologías.",
+      "text4": "Interesado en aprender"
+    },
+    "contact": {
+      "title": "Contáctame",
+      "subTitle": "¡Ponte en contacto!",
+      "text": "Actualmente estoy disponible para trabajar. Completa el formulario y me pondré en contacto contigo lo antes posible.",
+      "form": {
+        "input1": {
+          "title": "Nombre completo"
+        },
+        "input2": {
+          "title": "Correo"
+        },
+        "input3": {
+          "title": "Mensaje",
+          "placeholder": "Escribe tu mensaje"
+        },
+        "buttonText": "Conversemos"
+      }
+    },
+    "footer": {
+      "text1": "Todos los derechos reservados",
+      "text2": "Inspirado por",
+      "text3": "diseño",
+      "text4": "Hecho con"
+    }
+  }
+}

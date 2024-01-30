@@ -27,6 +27,7 @@
       "@/context/*": ["src/context/*"],
       "@/services/*": ["src/services/*"],
       "@/interfaces/*": ["src/interfaces/*"],
+      "@/locales/*": ["src/locales/*"],
       "@/styles/*": ["src/styles/*"]
     }
   },

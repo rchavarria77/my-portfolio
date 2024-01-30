@@ -3,8 +3,8 @@ import { defineConfig } from 'vite';
 import generateSitemap from 'vite-plugin-pages-sitemap';
 import Pages from 'vite-plugin-pages';
 import react from '@vitejs/plugin-react-swc';
-import tsconfigPaths from 'vite-tsconfig-paths';
 import Sitemap from 'vite-plugin-sitemap';
+import tsconfigPaths from 'vite-tsconfig-paths';
 
 // https://vitejs.dev/config/
 const config = defineConfig({
