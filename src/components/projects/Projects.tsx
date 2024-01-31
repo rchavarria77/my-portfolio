@@ -83,7 +83,7 @@ export const Projects = () => {
                   <div className='flex items-end justify-start mt-6 gap-x-4'>
                     <LinkButton
                       href={url}
-                      ariaLabel='Visit the website'
+                      aria-label='Visit the website'
                       className='text-xs md:text-sm'
                     >
                       <InternetIcon />

@@ -19,6 +19,7 @@ export const Documentation = () => {
         href={`/docs/cv_${currentLanguage}.pdf`}
         download
         className='gap-1 bg-transparent border-none dark:bg-transparent text-ebony-800 dark:text-ebony-300 hover:scale-110 min-w-max animate-pulse animate-infinite hover:animate-none'
+        aria-label='Download CV Button'
       >
         <DownloadIcon className='size-4' />
         <p className='flex items-center text-sm'>
@@ -32,7 +33,7 @@ export const Documentation = () => {
         href='#contact'
         target='_self'
         className='flex flex-row justify-around w-full gap-2 border rounded-full border-ebony-950 dark:border-ebony-300 lg:gap-0 hover:scale-110'
-        ariaLabel={`Let's Talk`}
+        aria-label={`Let's Talk`}
       >
         <MessageIcon className='size-4 text-ebony-800 dark:text-ebony-300' />
         <p className='text-sm text-ebony-800 dark:text-ebony-300'>

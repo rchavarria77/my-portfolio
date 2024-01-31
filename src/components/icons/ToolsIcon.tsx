@@ -8,6 +8,7 @@ export const ToolsIcon = (
 ) => {
   return (
     <svg
+      {...props}
       xmlns='http://www.w3.org/2000/svg'
       className={twMerge('icon icon-tabler icon-tabler-tools', props.className)}
       width='24'

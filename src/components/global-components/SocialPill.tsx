@@ -3,27 +3,23 @@ import { twMerge } from 'tailwind-merge';
 
 export const SocialPill = ({
   children,
-  href = '',
-  className = '',
+  className,
   target = '_blank',
-  ariaLabel,
-}: {
+  ...props
+}: React.AnchorHTMLAttributes<HTMLAnchorElement> & {
   children: any;
-  href: string;
   className?: string;
   target?: string;
-  ariaLabel?: string;
 }) => {
   return (
     <a
-      href={href}
+      {...props}
       className={twMerge(
         'flex items-center justify-center px-2 py-1 text-xs transition',
         className
       )}
       target={target}
       rel='noopener noreferrer'
-      aria-label={ariaLabel}
     >
       {children}
     </a>

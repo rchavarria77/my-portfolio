@@ -6,11 +6,11 @@ import { twMerge } from 'tailwind-merge';
 import { IInput } from '@/interfaces';
 
 export const TextAreaInput = ({
+  className,
+  defaultValue,
   fieldName,
   labelText,
-  defaultValue,
   placeholder,
-  className,
   isDisabled = false,
   isRequired = false,
   rows = 4,

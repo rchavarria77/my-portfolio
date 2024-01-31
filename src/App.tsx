@@ -17,13 +17,11 @@ const headerMenuOptions: IMenuOption[] = [
 
 const App = () => {
   return (
-    <>
-      <div className='flex flex-col justify-between min-h-[100dvh]'>
-        <Header options={headerMenuOptions} />
-        <Body />
-        <Footer />
-      </div>
-    </>
+    <div className='flex flex-col justify-between min-h-[100dvh]'>
+      <Header options={headerMenuOptions} />
+      <Body />
+      <Footer />
+    </div>
   );
 };
 

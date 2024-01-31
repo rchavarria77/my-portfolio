@@ -23,12 +23,12 @@ import {
 import { IExperience } from '@/interfaces';
 
 export const TimelineItem = ({
+  achievements,
+  company,
+  date,
+  description,
   id,
   role,
-  date,
-  company,
-  description,
-  achievements,
   tags,
 }: IExperience) => {
   //#region constants

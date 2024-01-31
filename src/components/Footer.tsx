@@ -76,13 +76,13 @@ export const Footer = () => {
           <div className='flex items-center order-2 sm:order-3'>
             <SocialPill
               href='https://www.linkedin.com/in/rchavarria7'
-              ariaLabel='LinkedIn'
+              aria-label='LinkedIn'
             >
               <LinkedInIcon className='size-5 md:size-6' />
             </SocialPill>
             <SocialPill
               href='https://github.com/rchavarria77'
-              ariaLabel='GitHub'
+              aria-label='GitHub'
             >
               <GitHubIcon className='size-5 md:size-6' />
             </SocialPill>
